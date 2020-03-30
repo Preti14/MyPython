@@ -1,0 +1,26 @@
+[1mdiff --git a/array_function.php b/array_function.php[m
+[1mindex 87a7995..8ae7e61 100644[m
+[1m--- a/array_function.php[m
+[1m+++ b/array_function.php[m
+[36m@@ -63,16 +63,16 @@[m [mprint_r(array_filter($array,"test_odd_number"));[m
+ $name = array("best","interview","question");[m
+ $index = array("1","2","3");[m
+ $result = array_merge($name,$index);[m
+[31m-echo "<pre>";print_r($result);[m
+[32m+[m[32m//echo "<pre>";print_r($result);[m
+ [m
+ $count = sizeof($result);[m
+ $result1 = $result2 = array();[m
+ for($i=$count-1;$i>=0;$i--){[m
+ 	$result1[] = $result[$i];[m
+ }[m
+[31m-print_r($result1);[m
+[32m+[m[32m//print_r($result1);[m
+ [m
+ for($j=0;$j<sizeof($result1);$j++){[m
+ 	$result2[$result1[$j]] = $j;[m
+ }[m
+[31m-print_r($result2);[m
+\ No newline at end of file[m
+[32m+[m[32m//print_r($result2);[m
+\ No newline at end of file[m

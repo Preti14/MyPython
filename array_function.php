@@ -63,16 +63,16 @@ print_r(array_filter($array,"test_odd_number"));
 $name = array("best","interview","question");
 $index = array("1","2","3");
 $result = array_merge($name,$index);
-echo "<pre>";print_r($result);
+//echo "<pre>";print_r($result);
 
 $count = sizeof($result);
 $result1 = $result2 = array();
 for($i=$count-1;$i>=0;$i--){
 	$result1[] = $result[$i];
 }
-print_r($result1);
+//print_r($result1);
 
 for($j=0;$j<sizeof($result1);$j++){
 	$result2[$result1[$j]] = $j;
 }
-print_r($result2);
+//print_r($result2);
